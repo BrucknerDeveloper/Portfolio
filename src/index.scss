@@ -1,0 +1,40 @@
+@import "./scss_utlity/variables", "./scss_utlity/resets", "./scss_utlity/components";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: var(--font-size-small);
+  font-family: var(--font-stack);
+  font-weight: 400;
+  color: var(--white-1);
+  line-height: var(--line-height-normal);
+  background: var(--black);
+  overflow-x: hidden;
+}
+
+//typography
+
+h1,
+h2,
+h3 {
+    font-family: 'Jost', sans-serif;
+    font-weight: 400;
+    line-height: var(--line-height-small);
+    color: var(--white);
+}
+
+h2 {
+  font-size: var(--font-size-large);
+  margin-bottom: var(--gutter-medium);
+}
+
+h3 {
+  font-size: var(--font-size-medium-1);
+  margin-bottom: var(--gutter-small);
+}
+
+p {
+  margin: var(--gutter-small) 0;
+}
