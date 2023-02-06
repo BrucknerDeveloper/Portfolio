@@ -12,7 +12,7 @@ For more Details you can email me at **bruckner.developer@gmail.com**.
 * SCSS
 * REACT
 * Javascript/Typescript
-* GIT/Github/Gitkraken
+* GIT/Github/GitKraken
 
 ## Progress Checklist 
 - [x] Setup
