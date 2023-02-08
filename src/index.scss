@@ -1,4 +1,7 @@
-@import "./scss_utlity/variables", "./scss_utlity/resets", "./scss_utlity/components";
+@import "./scss_utlity/variables", "./scss_utlity/resets", "./scss_utlity/animations", "./scss_utlity/components";
+//components
+@import "./App.scss";
+@import "./components/Header/Header.scss";
 
 html {
   scroll-behavior: smooth;
@@ -8,9 +11,9 @@ body {
   font-size: var(--font-size-small);
   font-family: var(--font-stack);
   font-weight: 400;
-  color: var(--white-1);
   line-height: var(--line-height-normal);
-  background: var(--black);
+  background: var(--clr-black);
+  color: var(--clr-white);
   overflow-x: hidden;
 }
 

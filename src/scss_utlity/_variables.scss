@@ -3,21 +3,16 @@
     //colors
     --clr-black: #000;
     --clr-pink: #ff3258;
-    --clr-light: #e5e5e6da;
     --clr-white: #f0e9f2;
+    --clr-white-1: #e5e5e6da;
 
     //font-sizes
     --fs-small: 1.8rem;
-    --fs-normal: 2.2rem;
-    --fs-medium: 2.8rem;
+    --fs-normal: 1.5rem; //ok
+    --fs-medium: 2rem; //ok
     --fs-medium-1: 3.6rem;
     --fs-large: 5.5rem;
-    --fs-huge: 7.5rem;
-
-    --fs-h1: 44rem;
-    --fs-h2: 23rem;
-    --fs-h3: 13rem;
-    --fs-regular: 12rem;
+    --fs-huge: 4.5rem; //ok
 
     //font-family
     --ff-grotesk: 'Hk Grotesk', sans-serif;
@@ -33,14 +28,6 @@
     --container-medium-width: 700px; 
     --container-small-width: 500px;
 
-    --gutter-huge: 12rem;
-    --gutter-medium: 6rem;
-    --gutter-normal: 3rem;
-    --gutter-small-1: 2.5rem;
-    --gutter-small: 2rem;
-    --gutter-x-small: 1rem;
-    --border-light: 1px solid rgb(36, 35, 35);   
-
     //media-queries 
     --mq-mobile: 480px;
     --mq-tablet: 768px;
@@ -48,3 +35,25 @@
     --mq-desktop: 1440px;
 }
 
+@media(min-width: var(--mq-tablet)) {
+    :root {
+
+    }
+}
+
+@media(min-width: var(--mq-laptop)) {
+    :root {
+        
+    }
+}
+
+@media(min-width: var(--mq-desktop)) {
+    :root {
+        --fs-small: 1.8rem;
+        --fs-normal: 2.2rem;
+        --fs-medium: 2.8rem;
+        --fs-medium-1: 3.6rem;
+        --fs-large: 5.5rem;
+        --fs-huge: 7.5rem;
+    }
+}

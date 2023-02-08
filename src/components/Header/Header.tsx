@@ -3,7 +3,7 @@ import React from "react"
 export default function() {
     return <header className="header">
         {/* Navigation */}
-        <nav className="nav">
+        <nav className="nav fs-normal white-1">
             <ul className="nav__items">
                 <li className="nav__item"><a href="#MyWork" className="nav__link">Work</a></li>
                 <li className="nav__item"><a href="#AboutMe" className="nav__link">About</a></li>
@@ -13,8 +13,8 @@ export default function() {
 
         {/* Intro */}
         <div className="header__intro">
-            <h1 className="header__title">Daniel Bruckner</h1>
-            <p className="header__description">A Front-end Developer based in Vienna, AT</p>
+            <h1 className="header__title fs-h1">Daniel Bruckner</h1>
+            <p className="header__description fs-medium ff-jost white-1">A Front-end Developer based in Vienna, AT</p>
             <a href="#contact" className="btn btn--pink">Get in touch</a>
         </div>
     </header>

@@ -1,0 +1,24 @@
+/* --- design-system --- */
+//font-sizes
+.fs-h1 {font-size: var(--fs-huge)} 
+.fs-h2 {font-size: var(--fs-large)} 
+.fs-h3 {font-size: var(--fs-medium-1)} 
+.fs-medium {font-size: var(--fs-medium)}
+.fs-normal {font-size: var(--fs-normal)}
+.fs-small {font-size: var(--fs-small);}
+
+//font-color
+.white {color: var(--clr-white)}
+.white-1 {color: var(--clr-white-1)}
+
+//font-family
+.ff-grotesk {font-family: var(--ff-grotesk);}
+.ff-jost {font-family: var(--ff-jost);}
+
+/* --- regular components --- */
+.heading-primary {
+    line-height: 1;
+    font-size: var(--font-size-huge);
+    font-weight: 400;
+}
+
