@@ -1,7 +1,9 @@
-@import "./scss_utlity/variables", "./scss_utlity/resets", "./scss_utlity/animations", "./scss_utlity/components";
+@import "./scss_utlity/variables", "./scss_utlity/resets", "./scss_utlity/mixins", "./scss_utlity/components";
 //components
 @import "./App.scss";
 @import "./components/Header/Header.scss";
+@import "./components/Main/Main.scss", "./components/Main/MyWork/MyWork.scss", "./components/Main/MyWork/Project.scss", "./components/Main/AboutMe.scss"
+, "./components/Main/Contact.scss";
 
 html {
   scroll-behavior: smooth;
@@ -29,15 +31,11 @@ h3 {
 }
 
 h2 {
-  font-size: var(--font-size-large);
+  font-size: var(--fs-large);
   margin-bottom: var(--gutter-medium);
 }
 
 h3 {
-  font-size: var(--font-size-medium-1);
+  font-size: var(--fs-medium-1);
   margin-bottom: var(--gutter-small);
-}
-
-p {
-  margin: var(--gutter-small) 0;
 }

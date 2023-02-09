@@ -1,24 +1,27 @@
 .header {
     background-image: url("/src/assets/header.jpg");
     background-size: cover;
+    background-position: center;
     min-height: 100vh;
 }
 
 .nav {
+    padding: 20px;
     
     & .nav__items {
         height: 50px;
         display: flex;
-        gap: 2rem;
+        gap: 3rem;
         justify-content: center;
         align-items: center;
 
         & .nav__item {
             cursor: pointer;
             position: relative;
-            padding-block: 10px;
+            padding-block: 1rem;
 
             &::after {
+                @include default-transition;   
                 content: "";
                 position: absolute;
                 bottom: 0;
@@ -26,7 +29,6 @@
                 width: 0;
                 height: .5rem;
                 background-color: var(--clr-white);
-                transition: all .25s ease-in-out;    
             }
 
             &:hover {
@@ -46,11 +48,15 @@
 }
 
 .header__intro {
+    padding: var(--gutter-small);
+    width: 100%;
     text-align: center;
     max-width: var(--container-small-width);
-    margin: auto;
-
-
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
     & .header__title {
     }
 

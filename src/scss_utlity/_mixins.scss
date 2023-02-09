@@ -1,0 +1,5 @@
+//--- MIXINS ---
+
+@mixin default-transition {
+    transition: all .25s ease-in-out;
+}
