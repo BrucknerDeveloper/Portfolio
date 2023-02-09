@@ -16,9 +16,32 @@
 .ff-jost {font-family: var(--ff-jost);}
 
 /* --- regular components --- */
-.heading-primary {
-    line-height: 1;
-    font-size: var(--font-size-huge);
-    font-weight: 400;
+
+.btn {
+    border: 1px solid var(--clr-pink);
+    padding: 1rem 3rem;
+    font-family: var(--ff-jost);
+}
+
+.btn--pink {
+    @include default-transition;    
+    background-color: var(--clr-pink);
+
+    &:hover {
+        background-color: transparent;
+    }
+}
+
+.primary-heading {
+    position: relative;
+    
+    &::after {
+        content: "";
+        margin-top: 15px;
+        display: block;
+        width: 80px;
+        height: 2px;
+        background-color: var(--clr-pink);
+    }
 }
 

@@ -1,7 +1,9 @@
 import React from "react"
 
+import MyWork from "./MyWork/MyWork"
+
 export default function() {
-    return <main>
-        <p>main</p>
+    return <main className="main">
+        <MyWork />
     </main>
 }
