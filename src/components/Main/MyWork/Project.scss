@@ -1,0 +1,11 @@
+.project {
+    padding: var(--gutter-small);
+}
+
+.project__items {
+    
+
+    & .project__item {
+        list-style-type: disc;
+    }
+}
