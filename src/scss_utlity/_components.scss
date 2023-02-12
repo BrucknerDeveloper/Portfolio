@@ -32,6 +32,33 @@
     }
 }
 
+.btn--bottom-border {
+    border: none;
+    border-bottom: 1px solid var(--clr-pink);
+    padding: .5rem 1rem;
+}
+
+.btn--left-to-right-hover {
+    position: relative;
+
+    &:hover::after {
+        background-color: var(--clr-pink);
+        width: 100%;
+    }
+
+    &::after {
+        @include default-transition;
+        content: "";
+        position: absolute;
+        background-color: var(--clr-white);
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 0%;
+        z-index: -1;
+    }
+}
+
 .primary-heading {
     position: relative;
     
