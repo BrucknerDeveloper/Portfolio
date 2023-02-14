@@ -1,0 +1,21 @@
+.aboutMe {
+
+}
+
+.aboutMe__container-flex {
+
+    & .aboutMe__portrait {
+        width: 100%;
+        margin-bottom: var(--gutter-medium);
+    }
+
+    & .aboutMe__description {
+        margin-bottom: var(--gutter-x-small);
+    }
+
+    & .aboutMe__btn {
+        display: inline-block;
+        margin-top: var(--gutter-x-small);
+    }
+}
+
