@@ -9,7 +9,7 @@ import project_sneaker from "/src/assets/Project_Sneaker.png"
 export default function() {
     return <section id="MyWork" className="myWork">
         <div className="gutter-row">
-            <h2 className="primary-heading fs-h2">My Work</h2>
+            <h2 className="primary-heading">My Work</h2>
             <Project 
                 preview={project_url} 
                 title="Quizzical App"
