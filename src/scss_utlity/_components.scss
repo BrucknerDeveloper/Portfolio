@@ -50,6 +50,7 @@ section {
 
 .btn--left-to-right-hover {
     position: relative;
+    color: var(--clr-white-1);
 
     &:hover::after {
         background-color: var(--clr-pink);
