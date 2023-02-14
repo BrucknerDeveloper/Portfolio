@@ -13,9 +13,12 @@
         margin-bottom: var(--gutter-x-small);
     }
 
+    & .aboutMe__description:last-of-type {
+        margin-bottom: var(--gutter-normal);
+    }
+
     & .aboutMe__btn {
         display: inline-block;
-        margin-top: var(--gutter-x-small);
     }
 }
 
