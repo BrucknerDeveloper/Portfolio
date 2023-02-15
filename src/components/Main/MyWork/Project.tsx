@@ -22,7 +22,7 @@ export default function({preview, title, description, technologies, link}: Proje
             )}
         </ul>
         <div className="project__container-link">
-            <a className="project__link fs-normal white-1 btn btn--bottom-border btn--left-to-right-hover" href={link}>Visit Site <span>&rarr;</span></a>
+            <a className="project__link fs-normal white-1 btn btn--bottom-border btn--left-to-right-hover" href={link} target="_blank">Visit Site <span>&rarr;</span></a>
             <img className="project__github" src={githubsvg} />
         </div>
     </div>

@@ -12,26 +12,26 @@ export default function() {
             <h2 className="primary-heading">My Work</h2>
             <Project 
                 preview={project_url} 
-                title="Quizzical App"
-                description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, eius." 
-                technologies={["HTML", "SCSS", "Javascript", "React"]}
-                link={"https://www.youtube.com"}
+                title="Url-Shortening App"
+                description="A Website for shortening Urls with Typescript and API calls." 
+                technologies={["HTML", "SCSS", "Javascript/Typescript", "React", "API", "Responsive"]}
+                link={"https://bruckner-url-shortening.netlify.app/"}
             />
 
             <Project 
                 preview={project_sneaker} 
-                title="Quizzical App"
-                description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, eius." 
-                technologies={["HTML", "SCSS", "Javascript", "React"]}
-                link={"https://www.youtube.com"}
+                title="E-Commerce App"
+                description="A Sneaker application for practicing React." 
+                technologies={["HTML", "SCSS", "Javascript", "React", "Responsive"]}
+                link={"https://bruckner-e-commerce.netlify.app/"}
             />
 
             <Project 
                 preview={project_quiz} 
                 title="Quizzical App"
-                description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, eius." 
-                technologies={["HTML", "SCSS", "Javascript", "React"]}
-                link={"https://www.youtube.com"}
+                description="A fun Quiz App with API calls and an loading animation." 
+                technologies={["HTML", "SCSS", "Javascript", "React", "API"]}
+                link={"https://bruckner-quiz.netlify.app/"}
             />
         </div>
     </section>
