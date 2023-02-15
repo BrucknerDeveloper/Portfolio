@@ -2,7 +2,7 @@ import React from "react"
 
 
 export default function() {
-    return <section id="Contact" className="contact">
+    return <section id="contact" className="contact">
         <div className="gutter-row">
             <h2 className="primary-heading">Get in Touch</h2>
             <p className="contact__description fs-normal white-1">Are you looking for a fast-performing and user-friendly website to represent your product or business? or 

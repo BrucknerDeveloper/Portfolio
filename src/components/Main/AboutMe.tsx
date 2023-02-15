@@ -3,7 +3,7 @@ import React from "react"
 import portrait from "/src/assets/Project_Quiz.png"
 
 export default function() {
-    return <section id="AboutMe" className="aboutMe">
+    return <section id="aboutMe" className="aboutMe">
         <div className="gutter-row">
             <h2 className="primary-heading">About Me</h2>
             <div className="aboutMe__container-flex">

@@ -4,6 +4,7 @@
 @import "./components/Header/Header.scss";
 @import "./components/Main/Main.scss", "./components/Main/MyWork/MyWork.scss", "./components/Main/MyWork/Project.scss", "./components/Main/AboutMe.scss"
 , "./components/Main/Contact.scss";
+@import "./components/Footer/Footer.scss";
 
 html {
   scroll-behavior: smooth;

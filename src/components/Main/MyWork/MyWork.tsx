@@ -7,7 +7,7 @@ import project_url from "/src/assets/Project_Url-shortening.png"
 import project_sneaker from "/src/assets/Project_Sneaker.png"
 
 export default function() {
-    return <section id="MyWork" className="myWork">
+    return <section id="myWork" className="myWork">
         <div className="gutter-row">
             <h2 className="primary-heading">My Work</h2>
             <Project 
