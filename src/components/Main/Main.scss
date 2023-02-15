@@ -1,3 +1,20 @@
 .main {
 
 }
+
+.main__backToTopArrow {
+    position: fixed;
+    width: 45px;
+    aspect-ratio: 1 / 1;
+    background-color: var(--clr-pink);
+    border-radius: 50%;
+    bottom: 4rem;
+    right: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & .main__upArrow {
+        width: 35px;
+    }
+}

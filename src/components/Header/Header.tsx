@@ -1,7 +1,7 @@
 import React from "react"
 
 export default function() {
-    return <header className="header">
+    return <header className="header" id="header">
         {/* Navigation */}
         <nav className="nav fs-normal white-1">
             <ul className="nav__items">
