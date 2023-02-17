@@ -64,3 +64,36 @@
         padding: 3rem;
     }
 }
+
+//media queries
+@media(min-width: $mq-tablet) {
+    .nav {
+        & .nav__items {
+            justify-content: end;
+            gap: 5rem;
+        }
+    }
+
+    .header__intro {
+        text-align: left;
+        max-width: initial;
+        top: 50%;
+        left: 0%;
+        transform: translate(0%, -50%);
+        
+        & .header__title {
+        }
+    
+        & .header__description {
+            padding: 3rem 0;
+        }
+    }
+}
+
+@media(min-width: $mq-laptop) {
+
+}
+
+@media(min-width: $mq-desktop) {
+
+}

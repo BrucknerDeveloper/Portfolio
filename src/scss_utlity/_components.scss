@@ -25,6 +25,30 @@ section {
     border-bottom: 1px solid var(--clr-light);
 }
 
+@media(max-width: 1340px) {
+    .gutter-row {
+        max-width: 1100px;
+    }
+}
+
+@media(max-width: 1240px) {
+    .gutter-row {
+        padding: 0 var(--gutter-medium);
+    }
+}
+
+@media(max-width: 600px) {
+    .gutter-row {
+        padding: 0 var(--gutter-normal);
+    }
+}
+
+@media(max-width: 600px) {
+    .gutter-row {
+        padding: 0 var(--gutter-small);
+    }
+}
+
 /* --- regular components --- */
 
 .btn {
