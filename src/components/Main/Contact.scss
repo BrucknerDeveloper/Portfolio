@@ -5,3 +5,11 @@
 .contact__description {
     margin-bottom: var(--gutter-normal);
 }
+
+@media(max-width: $mq-mobile) {
+    .contact--btn {
+        font-size: calc(var(--fs-small) * 0.9); //my email is too long for 320px width
+    }
+}
+
+

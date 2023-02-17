@@ -47,7 +47,6 @@ $mq-desktop: 1440px;
 
 @media(min-width: $mq-tablet) {
     :root {
-        --fs-small: 1.8rem; //ok
         --fs-normal: 1.8rem; //ok
         --fs-medium: 2.4rem; //ok
         --fs-medium-1: 3rem; //ok
@@ -64,7 +63,7 @@ $mq-desktop: 1440px;
 
 @media(min-width: $mq-desktop) {
     :root {
-        --fs-small: 2.2rem; //ok
+        --fs-small: 1.8rem; //ok
         --fs-normal: 2.2rem; //ok
         --fs-medium: 2.8rem; //ok
         --fs-medium-1: 3.6rem; //ok
