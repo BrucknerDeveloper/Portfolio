@@ -15,7 +15,7 @@ export default function() {
         <div className="header__intro">
             <h1 className="header__title fs-h1">Daniel Bruckner</h1>
             <p className="header__description fs-medium ff-jost white-1">A Front-end Developer based in Vienna, AT</p>
-            <a href="#Contact" className="btn btn--pink fs-medium">Get in touch</a>
+            <a href="#contact" className="btn btn--pink fs-medium">Get in touch</a>
         </div>
     </header>
 } 
