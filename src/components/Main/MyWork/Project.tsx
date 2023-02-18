@@ -1,6 +1,6 @@
 import React from "react"
 
-import githubsvg from "../../../assets/github.svg"
+import githubsvg from "/src/assets/github.svg"
 
 type ProjectProps = {
     preview: string,
