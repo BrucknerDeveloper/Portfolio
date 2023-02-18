@@ -1,6 +1,7 @@
 import React from "react"
 
 import portrait from "/src/assets/Project_Quiz.png"
+import lebenslauf from "/src/assets/Bruckner_Lebenslauf.pdf" //need to use the pdf in some way or else netlify removes it on build
 
 export default function() {
     return <section id="aboutMe" className="aboutMe">
@@ -13,7 +14,7 @@ export default function() {
                         real-world problems, and that are delightful to use. My specialties include HTML, CSS/SCSS, TypeScript, 
                         React JS, and animations (GSAP, AnimeJS)</p>
                     <p className="aboutMe__description">I went to school in HTL Krems with a primary focus on media technology.</p>
-                    <a href="/assets/Bruckner_Lebenslauf.pdf" className="aboutMe__btn btn btn--left-to-right-hover">My Resume</a>           
+                    <a href="/src/assets/Bruckner_Lebenslauf.pdf" className="aboutMe__btn btn btn--left-to-right-hover">My Resume</a>           
                 </div>
             </div>     
         </div>
