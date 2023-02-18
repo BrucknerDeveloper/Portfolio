@@ -2,9 +2,9 @@ import React from "react"
 
 import Project from "./Project"
 
-import project_quiz from "/src/assets/Project_Quiz.png"
-import project_url from "/src/assets/Project_Url-shortening.png"
-import project_sneaker from "/src/assets/Project_Sneaker.png"
+import project_quiz from "../../../assets/Project_Quiz.png"
+import project_url from "../../../assets/Project_Url-shortening.png"
+import project_sneaker from "../../../assets/Project_Sneaker.png"
 
 export default function() {
     return <section id="myWork" className="myWork">
