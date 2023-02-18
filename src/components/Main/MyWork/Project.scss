@@ -45,3 +45,22 @@
         }
     }
 }
+
+@media(min-width: $mq-tablet) {
+    .project {
+        &:not(:last-child) {
+            margin-bottom: 15rem;
+        }
+
+        display: grid;
+        grid-template-columns: 1fr 1.75fr;
+        grid-template-areas: "description img";
+        gap: 5rem;
+    }
+
+    .project__preview {
+        grid-area: img;
+        width: 100%;
+        margin-bottom: 0;
+    }
+}
