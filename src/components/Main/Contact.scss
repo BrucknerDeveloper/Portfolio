@@ -12,4 +12,8 @@
     }
 }
 
-
+@media(min-width: $mq-tablet) {
+    .contact__description {
+        max-width: 650px;
+    }
+}

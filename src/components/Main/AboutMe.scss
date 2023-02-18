@@ -22,3 +22,12 @@
     }
 }
 
+@media(min-width: $mq-tablet) {
+    .aboutMe__container-flex {
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+        grid-template-areas: "description img";
+        gap: 5rem;
+        align-items: center;
+    }
+}
