@@ -1,6 +1,6 @@
 import React from "react"
 
-import portrait from "/src/assets/Project_Quiz.png"
+import portrait from "../../assets/Project_Quiz.png"
 
 export default function() {
     return <section id="aboutMe" className="aboutMe">
