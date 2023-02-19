@@ -29,7 +29,7 @@ export default function() {
             <Project 
                 preview={project_quiz} 
                 title="Quizzical App"
-                description="A fun Quiz App with API calls and an loading animation." 
+                description="A fun Quiz App with API calls and a loading animation." 
                 technologies={["HTML", "SCSS", "Javascript", "React", "API"]}
                 link={"https://bruckner-quiz.netlify.app/"}
             />
