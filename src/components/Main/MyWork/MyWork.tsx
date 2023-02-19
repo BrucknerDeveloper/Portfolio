@@ -21,7 +21,7 @@ export default function() {
             <Project 
                 preview={project_sneaker} 
                 title="E-Commerce App"
-                description="A Sneaker application for practicing React." 
+                description="A Sneaker application for practicing React with a working cart." 
                 technologies={["HTML", "SCSS", "Javascript", "React", "Responsive"]}
                 link={"https://bruckner-e-commerce.netlify.app/"}
             />
