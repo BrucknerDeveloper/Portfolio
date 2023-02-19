@@ -12,7 +12,7 @@ export default function() {
         </nav>
 
         {/* Intro */}
-        <div className="gutter-row">
+        <div className="gutter-row header__row">
             <div className="header__intro" style={{position: "relative"}}>
                 <h1 className="header__title fs-h1">Daniel Bruckner</h1>
                 <p className="header__description fs-medium ff-jost white-1">A Front-end Developer based in Vienna, AT</p>
