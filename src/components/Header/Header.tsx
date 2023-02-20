@@ -1,17 +1,59 @@
-import React, { useLayoutEffect, useRef } from "react";
+import React, { useEffect, useLayoutEffect, useRef } from "react";//#endregion
+
+//gsap
 import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 export default function() {
-    const introRef = useRef<any>();
+    const introRef = useRef<any>(null);
+    // const navItemsRef = useRef<any>(null); //idk if this is better or via classes (probabbly with ref)
 
-    useLayoutEffect(() => {
-        // Refs allow you to access DOM nodes
-        console.log(introRef) // { current: div.box }
-        // then we can animate them like so...
-        gsap.to(introRef.current, {
-          rotation: "+=360"
+
+    useEffect(() => {
+        // gsap.from(introRef.current, {
+        //     // scrollTrigger: {
+        //     //     trigger: introRef.current,
+        //     //     start: "180px center",
+        //     //     markers: true,
+        //     //     toggleActions: "play none none none"
+        //     // },
+        //     x: -100,
+        //     duration: 1.5
+        // });
+
+        const timeline = gsap.timeline();
+        timeline.fromTo(".nav__item", 
+            {
+                y: -20,
+                opacity: 0
+            }, 
+            {
+                y: 0,
+                opacity: 1,
+                duration: .75,
+                ease: "power1.inOut",
+                stagger: {
+                    from: "start",
+                    amount: .1
+                  }
+            },
+            
+        )
+
+        timeline.fromTo(introRef.current, 
+            { 
+                opacity: 0,
+                filter:"blur(4px)"
+            },
+            {
+                opacity: 1,
+                filter:"blur(0px)",
+                duration: 1.25
         });
-      });
+
+      }, []);
 
     return <header className="header" id="header">
         {/* Navigation */}
