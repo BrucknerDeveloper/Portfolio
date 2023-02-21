@@ -1,6 +1,45 @@
-import React from "react"
+import React, { useEffect, useLayoutEffect, useRef } from "react";//#endregion
+
+//gsap
+import { gsap } from "gsap";
 
 export default function() {
+    const introRef = useRef<any>(null);
+    // const navItemsRef = useRef<any>(null); //idk if this is better or via classes (probabbly with ref)
+
+    useEffect(() => {
+        const timeline = gsap.timeline();
+        timeline.fromTo(".nav__item", 
+            {
+                y: -20,
+                opacity: 0
+            }, 
+            {
+                y: 0,
+                opacity: 1,
+                duration: .75,
+                ease: "power1.inOut",
+                stagger: {
+                    from: "start",
+                    amount: .1
+                  }
+            },
+            
+        )
+
+        timeline.fromTo(introRef.current, 
+            { 
+                opacity: 0,
+                filter:"blur(4px)"
+            },
+            {
+                opacity: 1,
+                filter:"blur(0px)",
+                duration: 1.25
+        });
+
+      }, []);
+
     return <header className="header" id="header">
         {/* Navigation */}
         <nav className="nav fs-normal white-1 gutter-row">
@@ -13,7 +52,7 @@ export default function() {
 
         {/* Intro */}
         <div className="gutter-row header__row">
-            <div className="header__intro" style={{position: "relative"}}>
+            <div className="header__intro" ref={introRef}>
                 <h1 className="header__title fs-h1">Daniel Bruckner</h1>
                 <p className="header__description fs-medium ff-jost white-1">A Front-end Developer based in Vienna, AT</p>
                 <a href="#contact" className="btn btn--pink fs-normal">Get in touch</a>
