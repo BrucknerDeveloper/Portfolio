@@ -23,7 +23,6 @@ export default function() {
             scrollTrigger: {
                 trigger: imgRef.current,
                 start: "top 85%",
-                markers: true,
                 toggleActions: "play none none none"
             },
         });
@@ -41,7 +40,6 @@ export default function() {
                 scrollTrigger: {
                     trigger: imgRef.current,
                     start: "top 85%",
-                    markers: true,
                     toggleActions: "play none none none"
                 },
             });

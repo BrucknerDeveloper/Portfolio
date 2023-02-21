@@ -31,7 +31,6 @@ export default function({preview, title, description, technologies, link}: Proje
             scrollTrigger: {
                 trigger: projectRef.current,
                 start: "top 85%",
-                markers: true,
                 toggleActions: "play none none none"
             },
         });

@@ -19,7 +19,6 @@ export default function() {
                 scrollTrigger: {
                     trigger: contactRef.current,
                     start: "top 85%",
-                    markers: true,
                     toggleActions: "play none none none"
                 },
             });
