@@ -2,27 +2,12 @@ import React, { useEffect, useLayoutEffect, useRef } from "react";//#endregion
 
 //gsap
 import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-
-gsap.registerPlugin(ScrollTrigger);
 
 export default function() {
     const introRef = useRef<any>(null);
     // const navItemsRef = useRef<any>(null); //idk if this is better or via classes (probabbly with ref)
 
-
     useEffect(() => {
-        // gsap.from(introRef.current, {
-        //     // scrollTrigger: {
-        //     //     trigger: introRef.current,
-        //     //     start: "180px center",
-        //     //     markers: true,
-        //     //     toggleActions: "play none none none"
-        //     // },
-        //     x: -100,
-        //     duration: 1.5
-        // });
-
         const timeline = gsap.timeline();
         timeline.fromTo(".nav__item", 
             {
