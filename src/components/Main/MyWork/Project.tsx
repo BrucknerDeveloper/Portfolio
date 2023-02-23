@@ -37,7 +37,7 @@ export default function({preview, title, description, technologies, link}: Proje
     }, [])
 
     return <div className="project" ref={projectRef}>
-        <img className="project__preview" src={preview}/>
+        <img className="project__preview" alt="Screenshot of a project website from Daniel Bruckner" src={preview}/>
         <div>
             <h3>{title}</h3>
             <p className="project__description fs-small white-1">{description}</p>
@@ -48,7 +48,7 @@ export default function({preview, title, description, technologies, link}: Proje
             </ul>
             <div className="project__container-link">
                 <a className="project__link fs-small white-1 btn btn--bottom-border btn--left-to-right-hover" href={link} target="_blank">Visit Site <span>&rarr;</span></a>
-                <a href="https://github.com/BrucknerDeveloper" target="_blank"><img className="project__github" src={githubsvg} /></a>
+                <a href="https://github.com/BrucknerDeveloper" target="_blank"><img className="project__github" alt="Github logo" src={githubsvg} /></a>
             </div>
         </div>
     </div>

@@ -6,8 +6,14 @@ import frontEndMentor_logo from "/src/assets/frontendmentor.png"
 
 export default function() {
     return <footer className="footer">
-        <a href="https://github.com/BrucknerDeveloper" target="_blank"><img className="footer__icon" src={github_logo} /></a>
-        <a href="https://www.linkedin.com/in/daniel-bruckner-40b043257/" target="_blank"><img className="footer__icon" src={linkedIn_logo} /></a>
-        <a href="https://www.frontendmentor.io/profile/DaBruckner" target="_blank"><img className="footer__icon" src={frontEndMentor_logo} /></a>
+        <a href="https://github.com/BrucknerDeveloper" target="_blank">
+            <img className="footer__icon" alt="github logo" src={github_logo} />
+        </a>
+        <a href="https://www.linkedin.com/in/daniel-bruckner-40b043257/" target="_blank">
+            <img className="footer__icon" alt="LinkedIn logo" src={linkedIn_logo} />
+        </a>
+        <a href="https://www.frontendmentor.io/profile/DaBruckner" target="_blank">
+            img className="footer__icon" alt="FrontendMentor logo" src={frontEndMentor_logo} />
+        </a>
     </footer>
 }

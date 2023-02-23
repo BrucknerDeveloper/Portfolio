@@ -44,7 +44,7 @@ export default function() {
                 onAnimationEnd={() => { if (!isMounted) setShowBackToTop(false) }}
                 style={isMounted ? mountedStyle : unmountedStyle}
             >
-                <img className="main__upArrow" src={upArrow} />
+                <img className="main__upArrow" alt="Up arrow" src={upArrow} />
             </a>
         }
     </main>

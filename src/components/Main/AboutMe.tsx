@@ -49,7 +49,7 @@ export default function() {
         <div className="gutter-row">
             <h2 className="primary-heading">About Me</h2>
             <div className="aboutMe__container-flex">
-                <img className="aboutMe__portrait" src={portrait} ref={imgRef}/>
+                <img className="aboutMe__portrait" alt="Portrait of the author" src={portrait} ref={imgRef}/>
                 <div className="white-1 fs-small" ref={descriptionRef}>
                     <p className="aboutMe__description">I'm a web developer based in Vienna, AT. I love building websites that have oustanding visuals, solve 
                         real-world problems, and that are delightful to use. My specialties include HTML, CSS/SCSS, TypeScript, 
