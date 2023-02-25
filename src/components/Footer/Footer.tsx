@@ -13,7 +13,7 @@ export default function() {
             <img className="footer__icon" alt="LinkedIn logo" src={linkedIn_logo} />
         </a>
         <a href="https://www.frontendmentor.io/profile/DaBruckner" target="_blank">
-            img className="footer__icon" alt="FrontendMentor logo" src={frontEndMentor_logo} />
+            <img className="footer__icon" alt="FrontendMentor logo" src={frontEndMentor_logo} />
         </a>
     </footer>
 }
