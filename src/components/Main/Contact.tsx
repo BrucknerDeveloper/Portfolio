@@ -1,14 +1,27 @@
-import React, { useEffect, useRef } from "react"
+import React, { useEffect, useRef, useState } from "react"
 import gsap from "gsap"
+import useIsMobile from "../../customHook/useIsMobile"
 
 
 export default function() {
     const contactRef = useRef(null)
 
+    const isMobile: boolean = useIsMobile()
+    const [gsapX, setGsapX] = useState<number>() //animation value for x
+
+    function checkMobile() {
+        if(isMobile) {
+            return 0
+        }
+        else {
+            return -100
+        }
+    }
+
     useEffect(() => {
         gsap.fromTo(contactRef.current,
             {
-                x: -100,
+                x: gsapX,
                 opacity: 0
             },
             {           

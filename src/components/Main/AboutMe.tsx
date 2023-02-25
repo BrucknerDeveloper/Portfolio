@@ -1,5 +1,6 @@
-import React, { useEffect, useRef } from "react"
+import React, { useEffect, useRef, useState } from "react"
 import gsap from "gsap"
+import useIsMobile from "../../customHook/useIsMobile"
 
 import portrait from "/src/assets/Portrait.jpg"
 import cv from "/src/assets/Bruckner_Lebenslauf.pdf" //need to use the pdf in some way or else netlify removes it on build
@@ -7,42 +8,54 @@ import cv from "/src/assets/Bruckner_Lebenslauf.pdf" //need to use the pdf in so
 export default function() {
     const imgRef = useRef(null)
     const descriptionRef = useRef(null)
+    const projectRef = useRef(null)
 
+    const isMobile: boolean = useIsMobile()
+    const [gsapY, setGsapY] = useState<number>(checkMobile()) //animation value for x
+
+    function checkMobile() {
+        if(isMobile) {
+            return 0
+        }
+        else {
+            return -100
+        }
+    }
 
     useEffect(() => {
-        gsap.fromTo(imgRef.current,
-        {
-            y: 100,
-            opacity: 0
-        },
-        {           
-            y: 0,
-            opacity: 1,
-            duration: 1,
-            ease: "Power1.easeOut",
-            scrollTrigger: {
-                trigger: imgRef.current,
-                start: "top 85%",
-                toggleActions: "play none none none"
-            },
-        });
-
-        gsap.fromTo(descriptionRef.current,
-            {
-                y: -100,
-                opacity: 0
-            },
-            {           
-                y: 0,
-                opacity: 1,
-                duration: 1,
-                ease: "Power1.easeOut",
-                scrollTrigger: {
-                    trigger: imgRef.current,
-                    start: "top 85%",
-                    toggleActions: "play none none none"
+            gsap.fromTo(imgRef.current,
+                {
+                    y: gsapY * -1,
+                    opacity: 0
                 },
-            });
+                {           
+                    y: 0,
+                    opacity: 1,
+                    duration: 1,
+                    ease: "Power1.easeOut",
+                    scrollTrigger: {
+                        trigger: imgRef.current,
+                        start: "top 85%",
+                        toggleActions: "play none none none"
+                    },
+                });
+        
+                gsap.fromTo(descriptionRef.current,
+                    {
+                        y: gsapY,
+                        opacity: 0
+                    },
+                    {           
+                        y: 0,
+                        opacity: 1,
+                        duration: 1,
+                        ease: "Power1.easeOut",
+                        scrollTrigger: {
+                            trigger: imgRef.current,
+                            start: "top 85%",
+                            toggleActions: "play none none none"
+                        },
+                    });
     }, [])
 
     return <section id="aboutMe" className="aboutMe">

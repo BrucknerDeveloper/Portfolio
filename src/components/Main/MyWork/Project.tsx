@@ -1,6 +1,7 @@
-import React, { useEffect, useRef } from "react"
+import React, { useEffect, useRef, useState } from "react"
 import gsap from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import useIsMobile from "../../../customHook/useIsMobile";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -15,12 +16,23 @@ type ProjectProps = {
 }
 
 export default function({preview, title, description, technologies, link}: ProjectProps) {
+    const isMobile: boolean = useIsMobile()
+    const [gsapX, setGsapX] = useState<number>(checkMobile()) //animation value for x
     const projectRef = useRef(null)
+
+    function checkMobile() {
+        if(isMobile) {
+            return 0
+        }
+        else {
+            return -100
+        }
+    }
 
     useEffect(() => {
         gsap.fromTo(projectRef.current,
         {
-            x: -100,
+            x: gsapX,
             opacity: 0
         },
         {           
