@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react"
 import gsap from "gsap"
 import useIsMobile from "../../customHook/useIsMobile"
 
-import portrait from "/src/assets/Portrait.png"
+import portrait from "/src/assets/Portrait2.jpg"
 import cv from "/src/assets/Bruckner_Lebenslauf.pdf" //need to use the pdf in some way or else netlify removes it on build
 
 export default function() {
