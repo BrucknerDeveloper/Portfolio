@@ -16,7 +16,7 @@ For more Details you can email me at **bruckner.developer@gmail.com**.
 
 ## Progress Checklist 
 - [x] Setup
-- [ ] HTML + Design
+- [x] HTML + Design
 - [x] Animations
 - [x] Functionality
 - [x] Writing and correctly using README/Commits/Branches/...
