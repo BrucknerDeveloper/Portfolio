@@ -5,6 +5,8 @@ import Project from "./Project"
 import project_quiz from "/src/assets/Project_Quiz.png"
 import project_url from "/src/assets/Project_Url-shortening.png"
 import project_sneaker from "/src/assets/Project_Sneaker.png"
+import project_giphy from "/src/assets/Project_Giphy.png"
+
 
 export default function() {
     return <section id="myWork" className="myWork">
@@ -16,6 +18,14 @@ export default function() {
                 description="A Website for shortening Urls with Typescript and API calls." 
                 technologies={["HTML", "SCSS", "Javascript/Typescript", "React", "API", "Responsive"]}
                 link={"https://bruckner-url-shortening.netlify.app/"}
+            />
+
+            <Project 
+                preview={project_giphy} 
+                title="Giphy App"
+                description="App using the Giphy API with own concipated design, localstorage and redux store." 
+                technologies={["HTML", "SCSS", "Javascript/Typescript", "React", "Redux", "API", "Figma"]}
+                link={"https://bruckner-giphy.netlify.app/"}
             />
 
             <Project 
@@ -33,6 +43,8 @@ export default function() {
                 technologies={["HTML", "SCSS", "Javascript", "React", "API"]}
                 link={"https://bruckner-quiz.netlify.app/"}
             />
+
+            
         </div>
     </section>
 }
