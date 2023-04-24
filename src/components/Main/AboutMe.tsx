@@ -3,7 +3,7 @@ import gsap from "gsap"
 import useIsMobile from "../../customHook/useIsMobile"
 
 import portrait from "/src/assets/Portrait2.jpg"
-import cv from "/src/assets/Bruckner_Lebenslauf.pdf" //need to use the pdf in some way or else netlify removes it on build
+import cv from "/src/assets/Bruckner-CV.pdf" //need to use the pdf in some way or else netlify removes it on build
 
 export default function() {
     const imgRef = useRef(null)
