@@ -16,6 +16,7 @@
         align-items: center;
 
         & .nav__item {
+            opacity: 0;
             cursor: pointer;
             position: relative;
             padding-block: 1rem;
